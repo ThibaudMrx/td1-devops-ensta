@@ -19,8 +19,14 @@ def display_metrics(data):
 
 def main():
     data = load_data()
-    display_metrics(data)
-    st.dataframe(data)
+    
+    # Filtre par produit
+    products = data["product"].unique().tolist()
+    selected = st.multiselect("Filtrer par produit", products, default=products)
+    filtered = data[data["product"].isin(selected)]
+    
+    display_metrics(filtered)
+    st.dataframe(filtered)
 
 if __name__ == "__main__":
     main()
