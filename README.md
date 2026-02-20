@@ -22,3 +22,4 @@ Voir `config.json` pour les options.
 
 - v0.4: Détail des transactions
 - v0.3: Filtrage par produit
+- v0.5: Recherche de produits
