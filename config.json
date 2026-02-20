@@ -1,5 +1,6 @@
 {
   "app_name": "Enstartup Analytics",
-  "version": "0.4.0",
-  "debug": false
+  "version": "0.4.1",
+  "debug": false,
+  "theme": "light"
 }
