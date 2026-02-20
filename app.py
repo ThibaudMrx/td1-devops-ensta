@@ -26,6 +26,14 @@ def main():
     
     display_metrics(filtered)
     st.dataframe(filtered)
+    
+    # Sidebar - sélection d'une ligne
+    st.sidebar.title("Détail transaction")
+    row_index = st.sidebar.number_input("Numéro de ligne", min_value=1, max_value=100, value=1)
+    if st.sidebar.button("Voir détail"):
+        row = filtered.iloc[row_index]
+        st.sidebar.write(f"Produit: {row['product']}")
+        st.sidebar.write(f"Montant: {row['amount']} €")
 
 if __name__ == "__main__":
     main()
