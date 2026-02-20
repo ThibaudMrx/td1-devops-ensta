@@ -17,3 +17,8 @@ streamlit run app.py
 ## Configuration
 
 Voir `config.json` pour les options.
+
+## Changelog
+
+- v0.4: Détail des transactions
+- v0.3: Filtrage par produit
