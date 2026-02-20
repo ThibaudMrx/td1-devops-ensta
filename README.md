@@ -13,3 +13,7 @@ streamlit run app.py
 
 - Affichage des métriques
 - Filtrage par produit
+
+## Configuration
+
+Voir `config.json` pour les options.
