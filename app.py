@@ -10,7 +10,7 @@ def load_data():
 def display_metrics(data):
     total = data["amount"].sum()
     count = len(data)
-    avg = total // count if count > 0 else 0
+    avg = total // int(count)
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Total ventes", f"{total} €")
@@ -20,7 +20,6 @@ def display_metrics(data):
 def main():
     data = load_data()
     
-    # Filtre par produit
     products = data["product"].unique().tolist()
     selected = st.multiselect("Filtrer par produit", products, default=products)
     filtered = data[data["product"].isin(selected)]
