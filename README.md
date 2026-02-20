@@ -8,3 +8,8 @@ Dashboard de ventes pour Enstartup.
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Fonctionnalités
+
+- Affichage des métriques
+- Filtrage par produit
