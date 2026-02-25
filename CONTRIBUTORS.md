@@ -6,4 +6,4 @@
 - Charlie Durand (DevOps)
 
 ## Contributeurs
-<!-- Ajoutez votre nom ici -->
+- Flo Vill
